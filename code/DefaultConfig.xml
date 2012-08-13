@@ -1,0 +1,234 @@
+<?xml version='1.0' standalone='yes' ?>
+<LVData>
+<Version>11.0</Version>
+<LvVariant>
+<Name>Value</Name>
+<Array>
+<Name>AnalogInSettings</Name>
+<Dimsize>3</Dimsize>
+<Cluster>
+<Name>Analog Input Setup</Name>
+<NumElts>4</NumElts>
+<DBL>
+<Name>Input Voltage Range</Name>
+<Val>10.00000000000000</Val>
+</DBL>
+<U32>
+<Name>Upsample Coefficient</Name>
+<Val>1</Val>
+</U32>
+<DAQChannel>
+<Name>Analog Input Channels</Name>
+<Val>PXI1Slot2/ai0:7</Val>
+</DAQChannel>
+<I32>
+<Name>Configuration</Name>
+<Val>10106</Val>
+</I32>
+</Cluster>
+<Cluster>
+<Name>Analog Input Setup</Name>
+<NumElts>4</NumElts>
+<DBL>
+<Name>Input Voltage Range</Name>
+<Val>10.00000000000000</Val>
+</DBL>
+<U32>
+<Name>Upsample Coefficient</Name>
+<Val>1</Val>
+</U32>
+<DAQChannel>
+<Name>Analog Input Channels</Name>
+<Val>PXI1Slot3/ai0:7</Val>
+</DAQChannel>
+<I32>
+<Name>Configuration</Name>
+<Val>10106</Val>
+</I32>
+</Cluster>
+<Cluster>
+<Name>Analog Input Setup</Name>
+<NumElts>4</NumElts>
+<DBL>
+<Name>Input Voltage Range</Name>
+<Val>10.00000000000000</Val>
+</DBL>
+<U32>
+<Name>Upsample Coefficient</Name>
+<Val>2</Val>
+</U32>
+<DAQChannel>
+<Name>Analog Input Channels</Name>
+<Val>PXI1Slot6/ai0:4</Val>
+</DAQChannel>
+<I32>
+<Name>Configuration</Name>
+<Val>10106</Val>
+</I32>
+</Cluster>
+</Array>
+</LvVariant>
+<LvVariant>
+<Name>Value</Name>
+<Cluster>
+<Name>Referece Clock Setup</Name>
+<NumElts>2</NumElts>
+<String>
+<Name>RefClockGlobalName</Name>
+<Val>PXI_Clk10</Val>
+</String>
+<DBL>
+<Name>RefClockRate</Name>
+<Val>10000000.00000000000000</Val>
+</DBL>
+</Cluster>
+</LvVariant>
+<LvVariant>
+<Name>Value</Name>
+<Cluster>
+<Name>Counter Setup</Name>
+<NumElts>2</NumElts>
+<DAQChannel>
+<Name>Device and Counter</Name>
+<Val>PXI1Slot3/ctr0</Val>
+</DAQChannel>
+<String>
+<Name>PXI_trigger</Name>
+<Val>PXI_Trig3</Val>
+</String>
+</Cluster>
+</LvVariant>
+<LvVariant>
+<Name>Value</Name>
+<Cluster>
+<Name>Sample Clock Export</Name>
+<NumElts>3</NumElts>
+<DAQChannel>
+<Name>DAQmx Terminal</Name>
+<Val>/PXI1Slot2/PFI0</Val>
+</DAQChannel>
+<Boolean>
+<Name>ExportClock?</Name>
+<Val>0</Val>
+</Boolean>
+<DAQChannel>
+<Name>DAQmx Device Name</Name>
+<Val>PXI1Slot2</Val>
+</DAQChannel>
+</Cluster>
+</LvVariant>
+<LvVariant>
+<Name>Value</Name>
+<Path>
+<Name>RowConfigFile</Name>
+<Val>temp.txt</Val>
+</Path>
+</LvVariant>
+<LvVariant>
+<Name>Value</Name>
+<Array>
+<Name>Digital Out Tasks</Name>
+<Dimsize>3</Dimsize>
+<DAQChannel>
+<Name>DAQmx Physical Channel</Name>
+<Val>PXI1Slot2/port0</Val>
+</DAQChannel>
+<DAQChannel>
+<Name>DAQmx Physical Channel</Name>
+<Val>PXI1Slot3/port0</Val>
+</DAQChannel>
+<DAQChannel>
+<Name>DAQmx Physical Channel</Name>
+<Val>PXI1Slot6/port0</Val>
+</DAQChannel>
+</Array>
+</LvVariant>
+<LvVariant>
+<Name>Value</Name>
+<Array>
+<Name>AnalogSettings</Name>
+<Dimsize>0</Dimsize>
+<Cluster>
+<Name>Cluster</Name>
+<NumElts>2</NumElts>
+<Array>
+<Name>AnalogOut (Volt)</Name>
+<Dimsize>0</Dimsize>
+<DBL>
+<Name>Numeric</Name>
+<Val></Val>
+</DBL>
+</Array>
+<DAQChannel>
+<Name>DAQmx Device Name</Name>
+<Val></Val>
+</DAQChannel>
+</Cluster>
+</Array>
+</LvVariant>
+<LvVariant>
+<Name>Value</Name>
+<Array>
+<Name>LUT</Name>
+<Dimsize>4</Dimsize>
+<I32>
+<Name>Numeric</Name>
+<Val>0</Val>
+</I32>
+<I32>
+<Name>Numeric</Name>
+<Val>0</Val>
+</I32>
+<I32>
+<Name>Numeric</Name>
+<Val>0</Val>
+</I32>
+<I32>
+<Name>Numeric</Name>
+<Val>0</Val>
+</I32>
+</Array>
+</LvVariant>
+<LvVariant>
+<Name>Value</Name>
+<Cluster>
+<Name>HWSettings</Name>
+<NumElts>7</NumElts>
+<I32>
+<Name>Nr. of Columns</Name>
+<Val>1</Val>
+</I32>
+<I32>
+<Name>Nr. of Rows</Name>
+<Val>18</Val>
+</I32>
+<I32>
+<Name>OverSampling</Name>
+<Val>10</Val>
+</I32>
+<I32>
+<Name>Fetch Rate </Name>
+<Val>20</Val>
+</I32>
+<I32>
+<Name>Sampling Rate</Name>
+<Val>50000</Val>
+</I32>
+<I32>
+<Name>Nr. of BNC inputs</Name>
+<Val>3</Val>
+</I32>
+<I32>
+<Name>Sample Strip Length</Name>
+<Val>1</Val>
+</I32>
+</Cluster>
+</LvVariant>
+<LvVariant>
+<Name>Value</Name>
+<Boolean>
+<Name>BitSwitch</Name>
+<Val>1</Val>
+</Boolean>
+</LvVariant>
+</LVData>
