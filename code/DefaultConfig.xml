@@ -1,17 +1,17 @@
 <?xml version='1.0' standalone='yes' ?>
 <LVData>
-<Version>11.0</Version>
+<Version>12.0</Version>
 <LvVariant>
 <Name>Value</Name>
 <Array>
 <Name>AnalogInSettings</Name>
-<Dimsize>3</Dimsize>
+<Dimsize>5</Dimsize>
 <Cluster>
 <Name>Analog Input Setup</Name>
 <NumElts>4</NumElts>
 <DBL>
 <Name>Input Voltage Range</Name>
-<Val>10.00000000000000</Val>
+<Val>5.00000000000000</Val>
 </DBL>
 <U32>
 <Name>Upsample Coefficient</Name>
@@ -19,7 +19,7 @@
 </U32>
 <DAQChannel>
 <Name>Analog Input Channels</Name>
-<Val>PXI1Slot2/ai0:7</Val>
+<Val>PXI1Slot2/ai17:20, PXI1Slot2/ai22</Val>
 </DAQChannel>
 <I32>
 <Name>Configuration</Name>
@@ -31,7 +31,7 @@
 <NumElts>4</NumElts>
 <DBL>
 <Name>Input Voltage Range</Name>
-<Val>10.00000000000000</Val>
+<Val>5.00000000000000</Val>
 </DBL>
 <U32>
 <Name>Upsample Coefficient</Name>
@@ -39,7 +39,47 @@
 </U32>
 <DAQChannel>
 <Name>Analog Input Channels</Name>
-<Val>PXI1Slot3/ai0:7</Val>
+<Val>PXI1Slot3/ai16, PXI1Slot3/ai18:19, PXI1Slot3/ai21, PXI1Slot3/ai23</Val>
+</DAQChannel>
+<I32>
+<Name>Configuration</Name>
+<Val>10106</Val>
+</I32>
+</Cluster>
+<Cluster>
+<Name>Analog Input Setup</Name>
+<NumElts>4</NumElts>
+<DBL>
+<Name>Input Voltage Range</Name>
+<Val>5.00000000000000</Val>
+</DBL>
+<U32>
+<Name>Upsample Coefficient</Name>
+<Val>1</Val>
+</U32>
+<DAQChannel>
+<Name>Analog Input Channels</Name>
+<Val>PXI1Slot4/ai17:20, PXI1Slot4/ai22</Val>
+</DAQChannel>
+<I32>
+<Name>Configuration</Name>
+<Val>10106</Val>
+</I32>
+</Cluster>
+<Cluster>
+<Name>Analog Input Setup</Name>
+<NumElts>4</NumElts>
+<DBL>
+<Name>Input Voltage Range</Name>
+<Val>5.00000000000000</Val>
+</DBL>
+<U32>
+<Name>Upsample Coefficient</Name>
+<Val>1</Val>
+</U32>
+<DAQChannel>
+<Name>Analog Input Channels</Name>
+<Val>PXI1Slot5/ai16, PXI1Slot5/ai18:19, PXI1Slot5/ai21, PXI1Slot5/ai23</Val>
 </DAQChannel>
 <I32>
 <Name>Configuration</Name>
@@ -121,14 +161,14 @@
 <Name>Value</Name>
 <Path>
 <Name>RowConfigFile</Name>
-<Val>temp.txt</Val>
+<Val>C:\Users\Hank\Desktop\daq_v3_setup\daq_v3_row_selects_hdn_360.txt</Val>
 </Path>
 </LvVariant>
 <LvVariant>
 <Name>Value</Name>
 <Array>
 <Name>Digital Out Tasks</Name>
-<Dimsize>3</Dimsize>
+<Dimsize>5</Dimsize>
 <DAQChannel>
 <Name>DAQmx Physical Channel</Name>
 <Val>PXI1Slot2/port0</Val>
@@ -136,6 +176,14 @@
 <DAQChannel>
 <Name>DAQmx Physical Channel</Name>
 <Val>PXI1Slot3/port0</Val>
+</DAQChannel>
+<DAQChannel>
+<Name>DAQmx Physical Channel</Name>
+<Val>PXI1Slot4/port0</Val>
+</DAQChannel>
+<DAQChannel>
+<Name>DAQmx Physical Channel</Name>
+<Val>PXI1Slot5/port0</Val>
 </DAQChannel>
 <DAQChannel>
 <Name>DAQmx Physical Channel</Name>
@@ -147,21 +195,137 @@
 <Name>Value</Name>
 <Array>
 <Name>AnalogSettings</Name>
-<Dimsize>0</Dimsize>
+<Dimsize>5</Dimsize>
 <Cluster>
 <Name>Cluster</Name>
 <NumElts>2</NumElts>
 <Array>
 <Name>AnalogOut (Volt)</Name>
-<Dimsize>0</Dimsize>
+<Dimsize>4</Dimsize>
 <DBL>
 <Name>Numeric</Name>
-<Val></Val>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Numeric</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Numeric</Name>
+<Val>2.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Numeric</Name>
+<Val>-2.00000000000000</Val>
 </DBL>
 </Array>
 <DAQChannel>
 <Name>DAQmx Device Name</Name>
-<Val></Val>
+<Val>PXI1Slot2</Val>
+</DAQChannel>
+</Cluster>
+<Cluster>
+<Name>Cluster</Name>
+<NumElts>2</NumElts>
+<Array>
+<Name>AnalogOut (Volt)</Name>
+<Dimsize>4</Dimsize>
+<DBL>
+<Name>Numeric</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Numeric</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Numeric</Name>
+<Val>-2.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Numeric</Name>
+<Val>-10.00000000000000</Val>
+</DBL>
+</Array>
+<DAQChannel>
+<Name>DAQmx Device Name</Name>
+<Val>PXI1Slot3</Val>
+</DAQChannel>
+</Cluster>
+<Cluster>
+<Name>Cluster</Name>
+<NumElts>2</NumElts>
+<Array>
+<Name>AnalogOut (Volt)</Name>
+<Dimsize>4</Dimsize>
+<DBL>
+<Name>Numeric</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Numeric</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Numeric</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Numeric</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Array>
+<DAQChannel>
+<Name>DAQmx Device Name</Name>
+<Val>PXI1Slot4</Val>
+</DAQChannel>
+</Cluster>
+<Cluster>
+<Name>Cluster</Name>
+<NumElts>2</NumElts>
+<Array>
+<Name>AnalogOut (Volt)</Name>
+<Dimsize>4</Dimsize>
+<DBL>
+<Name>Numeric</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Numeric</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Numeric</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Numeric</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Array>
+<DAQChannel>
+<Name>DAQmx Device Name</Name>
+<Val>PXI1Slot5</Val>
+</DAQChannel>
+</Cluster>
+<Cluster>
+<Name>Cluster</Name>
+<NumElts>2</NumElts>
+<Array>
+<Name>AnalogOut (Volt)</Name>
+<Dimsize>2</Dimsize>
+<DBL>
+<Name>Numeric</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Numeric</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Array>
+<DAQChannel>
+<Name>DAQmx Device Name</Name>
+<Val>PXI1Slot6</Val>
 </DAQChannel>
 </Cluster>
 </Array>
@@ -170,10 +334,18 @@
 <Name>Value</Name>
 <Array>
 <Name>LUT</Name>
-<Dimsize>4</Dimsize>
+<Dimsize>25</Dimsize>
 <I32>
 <Name>Numeric</Name>
-<Val>0</Val>
+<Val>2</Val>
+</I32>
+<I32>
+<Name>Numeric</Name>
+<Val>4</Val>
+</I32>
+<I32>
+<Name>Numeric</Name>
+<Val>3</Val>
 </I32>
 <I32>
 <Name>Numeric</Name>
@@ -181,11 +353,87 @@
 </I32>
 <I32>
 <Name>Numeric</Name>
-<Val>0</Val>
+<Val>1</Val>
 </I32>
 <I32>
 <Name>Numeric</Name>
-<Val>0</Val>
+<Val>7</Val>
+</I32>
+<I32>
+<Name>Numeric</Name>
+<Val>6</Val>
+</I32>
+<I32>
+<Name>Numeric</Name>
+<Val>5</Val>
+</I32>
+<I32>
+<Name>Numeric</Name>
+<Val>9</Val>
+</I32>
+<I32>
+<Name>Numeric</Name>
+<Val>8</Val>
+</I32>
+<I32>
+<Name>Numeric</Name>
+<Val>12</Val>
+</I32>
+<I32>
+<Name>Numeric</Name>
+<Val>14</Val>
+</I32>
+<I32>
+<Name>Numeric</Name>
+<Val>13</Val>
+</I32>
+<I32>
+<Name>Numeric</Name>
+<Val>10</Val>
+</I32>
+<I32>
+<Name>Numeric</Name>
+<Val>11</Val>
+</I32>
+<I32>
+<Name>Numeric</Name>
+<Val>17</Val>
+</I32>
+<I32>
+<Name>Numeric</Name>
+<Val>16</Val>
+</I32>
+<I32>
+<Name>Numeric</Name>
+<Val>15</Val>
+</I32>
+<I32>
+<Name>Numeric</Name>
+<Val>19</Val>
+</I32>
+<I32>
+<Name>Numeric</Name>
+<Val>18</Val>
+</I32>
+<I32>
+<Name>Numeric</Name>
+<Val>20</Val>
+</I32>
+<I32>
+<Name>Numeric</Name>
+<Val>21</Val>
+</I32>
+<I32>
+<Name>Numeric</Name>
+<Val>22</Val>
+</I32>
+<I32>
+<Name>Numeric</Name>
+<Val>23</Val>
+</I32>
+<I32>
+<Name>Numeric</Name>
+<Val>24</Val>
 </I32>
 </Array>
 </LvVariant>
@@ -196,7 +444,7 @@
 <NumElts>7</NumElts>
 <I32>
 <Name>Nr. of Columns</Name>
-<Val>1</Val>
+<Val>20</Val>
 </I32>
 <I32>
 <Name>Nr. of Rows</Name>
@@ -204,7 +452,7 @@
 </I32>
 <I32>
 <Name>OverSampling</Name>
-<Val>10</Val>
+<Val>6</Val>
 </I32>
 <I32>
 <Name>Fetch Rate </Name>
@@ -212,15 +460,15 @@
 </I32>
 <I32>
 <Name>Sampling Rate</Name>
-<Val>50000</Val>
+<Val>100000</Val>
 </I32>
 <I32>
 <Name>Nr. of BNC inputs</Name>
-<Val>3</Val>
+<Val>5</Val>
 </I32>
 <I32>
 <Name>Sample Strip Length</Name>
-<Val>1</Val>
+<Val>0</Val>
 </I32>
 </Cluster>
 </LvVariant>
@@ -228,7 +476,7 @@
 <Name>Value</Name>
 <Boolean>
 <Name>BitSwitch</Name>
-<Val>1</Val>
+<Val>0</Val>
 </Boolean>
 </LvVariant>
 </LVData>
